@@ -8,6 +8,9 @@ public class Model extends Observable {
 	ArrayList<Activities> activities = new ArrayList<Activities>();
 	int counter;
 	Activities activity;
+	int screenHeight;
+	int screenWidth;
+	int screenCenter;
 	
 	public Model() {
 		initiateDatabase();
@@ -28,10 +31,23 @@ public class Model extends Observable {
 	private void initiateDatabase() {
 		String s;
 		String t = "https://www.google.com";
-		for(int i = 1; i <= 10; i++) {
+		for(int i = 1; i <= 6; i++) {
+			String pictureName = "event" + i;
 			s = "activity" + i;
-			activities.add(new Activities(s, t));
+			activities.add(new Activities(s, t, pictureName));
 		}
+	}
+	
+	public int getScreenWidth() {
+		return screenWidth;
+	}
+	
+	public int getScreenHeight() {
+		return screenHeight;
+	}
+	
+	public int getScreenCenter() {
+		return screenCenter;
 	}
 	
 	public String getWebsite() {
@@ -40,5 +56,16 @@ public class Model extends Observable {
 	
 	public Activities getActivity() {
 		return activity;
+	}
+
+	public void setMetrics(int screenHeight, int screenWidth) {
+		this.screenHeight = screenHeight;
+		this.screenWidth = screenWidth;
+		screenCenter = screenWidth / 2;
+		System.out.println("Screen height is: " + screenHeight + "Screen width is: " + screenWidth);
+	}
+	public void stuffs() {
+		setChanged();
+		notifyObservers();
 	}
 }
