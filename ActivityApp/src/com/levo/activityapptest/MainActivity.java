@@ -87,13 +87,21 @@ public void onCreate(Bundle savedInstanceState) {
 		yesButtonLayout.setLayoutParams(new LinearLayout.LayoutParams(0, android.view.ViewGroup.LayoutParams.MATCH_PARENT, 1));
 		yesButtonLayout.setGravity(Gravity.CENTER);
 		yesButtonLayout.setBackgroundColor(Color.parseColor("#000000"));
-		yesButtonLayout.setClickable(true);
+		Button yesButton = new Button(this);
+		yesButton.setOnClickListener(new OnClickListener(){
+			public void onClick(View v){
+				System.out.println("YesButton");
+				
+			}
+		});
 		yesButtonLayout.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				System.out.println("yes");
-			}
+				stuffs();
+;			}
 		});
+		yesButtonLayout.addView(yesButton);
 		buttonsLayout.addView(yesButtonLayout);
 		
 		LinearLayout noButtonLayout = new LinearLayout(this);
