@@ -20,7 +20,7 @@ public class SelectController implements OnClickListener{
 		view.yesButton.setOnClickListener(this);
 		view.noButton.setOnClickListener(this);
 		//view.view.findViewById(1).setOnClickListener(this);
-		view.website.setOnClickListener(this);
+		//view.website.setOnClickListener(this);
 	}
 
 	public void onClick(View v) {
@@ -28,7 +28,7 @@ public class SelectController implements OnClickListener{
 			//Set this in your bucket list
 		} else if (v == view.noButton) {
 			model.setActivity();
-		} else if (v == view.website) {
+		} else /*if (v == view.website)*/ {
 			System.out.println("ajdf");
 			view.dialog.dismiss();
 		}
