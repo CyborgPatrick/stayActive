@@ -11,6 +11,10 @@ public class Activities {
 		this.picture = picture;
 	}
 	
+	public String getType() {
+		return "Activity";
+	}
+	
 	public String getName() {
 		return name;
 	}
