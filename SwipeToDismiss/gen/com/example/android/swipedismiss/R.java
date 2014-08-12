@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.levo.activityapptest;
+package com.example.android.swipedismiss;
 
 public final class R {
     public static final class anim {
@@ -1068,15 +1068,7 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int event1=0x7f020057;
-        public static final int event2=0x7f020058;
-        public static final int event3=0x7f020059;
-        public static final int event4=0x7f02005a;
-        public static final int event5=0x7f02005b;
-        public static final int event6=0x7f02005c;
-        public static final int ic_launcher=0x7f02005d;
-        public static final int no=0x7f02005e;
-        public static final int yes=0x7f02005f;
+        public static final int ic_launcher=0x7f020057;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1098,6 +1090,7 @@ containing a value of this type.
         public static final int default_activity_button=0x7f050028;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
+        public static final int dismissable_container=0x7f05003c;
         public static final int dropdown=0x7f05000f;
         public static final int edit_query=0x7f050030;
         public static final int end=0x7f050013;
@@ -1108,7 +1101,6 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int layoutview=0x7f05003c;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
         public static final int middle=0x7f050012;
@@ -1128,7 +1120,6 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
-        public static final int select_activity=0x7f05003d;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
@@ -1193,8 +1184,7 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_main=0x7f030018;
-        public static final int select_activity=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int support_simple_spinner_dropdown_item=0x7f030019;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1238,35 +1228,10 @@ containing a value of this type.
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int app_name=0x7f0a000d;
-        public static final int hello_world=0x7f0a000e;
+        public static final int heading_dismissable_list_view=0x7f0a000f;
+        public static final int heading_dismissable_views=0x7f0a000e;
     }
     public static final class style {
-        /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
-        Base application theme for API 11+. This theme completely replaces
-        AppBaseTheme from res/values/styles.xml on API 11+ devices.
-    
- API 11 theme customizations can go here. 
-
-        Base application theme for API 14+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 14+ devices.
-    
- API 14 theme customizations can go here. 
-         */
-        public static final int AppBaseTheme=0x7f0b008b;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
-         */
-        public static final int AppTheme=0x7f0b008c;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;
@@ -1484,26 +1449,26 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background com.levo.activityapptest:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit com.levo.activityapptest:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked com.levo.activityapptest:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout com.levo.activityapptest:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions com.levo.activityapptest:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
-           <tr><td><code>{@link #ActionBar_divider com.levo.activityapptest:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
-           <tr><td><code>{@link #ActionBar_height com.levo.activityapptest:height}</code></td><td> Specifies a fixed height.</td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout com.levo.activityapptest:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_icon com.levo.activityapptest:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.levo.activityapptest:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding com.levo.activityapptest:itemPadding}</code></td><td> Specifies padding that should be applied to the left and right sides of
+           <tr><td><code>{@link #ActionBar_background com.example.android.swipedismiss:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.example.android.swipedismiss:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.example.android.swipedismiss:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.example.android.swipedismiss:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.example.android.swipedismiss:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.example.android.swipedismiss:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
+           <tr><td><code>{@link #ActionBar_height com.example.android.swipedismiss:height}</code></td><td> Specifies a fixed height.</td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.example.android.swipedismiss:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.example.android.swipedismiss:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.android.swipedismiss:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.example.android.swipedismiss:itemPadding}</code></td><td> Specifies padding that should be applied to the left and right sides of
              system-provided items in the bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.levo.activityapptest:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode com.levo.activityapptest:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding com.levo.activityapptest:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle com.levo.activityapptest:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle com.levo.activityapptest:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.levo.activityapptest:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
-           <tr><td><code>{@link #ActionBar_title com.levo.activityapptest:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle com.levo.activityapptest:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.example.android.swipedismiss:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.example.android.swipedismiss:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.example.android.swipedismiss:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.example.android.swipedismiss:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.example.android.swipedismiss:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.android.swipedismiss:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #ActionBar_title com.example.android.swipedismiss:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.example.android.swipedismiss:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -1541,7 +1506,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:background
+          @attr name com.example.android.swipedismiss:background
         */
         public static final int ActionBar_background = 10;
         /**
@@ -1555,7 +1520,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:backgroundSplit
+          @attr name com.example.android.swipedismiss:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
@@ -1569,7 +1534,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:backgroundStacked
+          @attr name com.example.android.swipedismiss:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
@@ -1581,7 +1546,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:customNavigationLayout
+          @attr name com.example.android.swipedismiss:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
@@ -1604,7 +1569,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:displayOptions
+          @attr name com.example.android.swipedismiss:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
@@ -1616,7 +1581,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:divider
+          @attr name com.example.android.swipedismiss:divider
         */
         public static final int ActionBar_divider = 9;
         /**
@@ -1634,7 +1599,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:height
+          @attr name com.example.android.swipedismiss:height
         */
         public static final int ActionBar_height = 1;
         /**
@@ -1646,7 +1611,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:homeLayout
+          @attr name com.example.android.swipedismiss:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
@@ -1658,7 +1623,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:icon
+          @attr name com.example.android.swipedismiss:icon
         */
         public static final int ActionBar_icon = 7;
         /**
@@ -1670,7 +1635,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:indeterminateProgressStyle
+          @attr name com.example.android.swipedismiss:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
@@ -1689,7 +1654,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:itemPadding
+          @attr name com.example.android.swipedismiss:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
@@ -1701,7 +1666,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:logo
+          @attr name com.example.android.swipedismiss:logo
         */
         public static final int ActionBar_logo = 8;
         /**
@@ -1721,7 +1686,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:navigationMode
+          @attr name com.example.android.swipedismiss:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
@@ -1739,7 +1704,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:progressBarPadding
+          @attr name com.example.android.swipedismiss:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
@@ -1751,7 +1716,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:progressBarStyle
+          @attr name com.example.android.swipedismiss:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
@@ -1767,7 +1732,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:subtitle
+          @attr name com.example.android.swipedismiss:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
@@ -1779,7 +1744,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:subtitleTextStyle
+          @attr name com.example.android.swipedismiss:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
@@ -1795,7 +1760,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:title
+          @attr name com.example.android.swipedismiss:title
         */
         public static final int ActionBar_title = 0;
         /**
@@ -1807,7 +1772,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:titleTextStyle
+          @attr name com.example.android.swipedismiss:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /**  Valid LayoutParams for views placed in the action bar as custom views. 
@@ -1838,17 +1803,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowActionBar com.levo.activityapptest:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowActionBarOverlay com.levo.activityapptest:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowFixedHeightMajor com.levo.activityapptest:windowFixedHeightMajor}</code></td><td> A fixed height for the window along the major axis of the screen,
+           <tr><td><code>{@link #ActionBarWindow_windowActionBar com.example.android.swipedismiss:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowActionBarOverlay com.example.android.swipedismiss:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowFixedHeightMajor com.example.android.swipedismiss:windowFixedHeightMajor}</code></td><td> A fixed height for the window along the major axis of the screen,
              that is, when in portrait.</td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowFixedHeightMinor com.levo.activityapptest:windowFixedHeightMinor}</code></td><td> A fixed height for the window along the minor axis of the screen,
+           <tr><td><code>{@link #ActionBarWindow_windowFixedHeightMinor com.example.android.swipedismiss:windowFixedHeightMinor}</code></td><td> A fixed height for the window along the minor axis of the screen,
              that is, when in landscape.</td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowFixedWidthMajor com.levo.activityapptest:windowFixedWidthMajor}</code></td><td> A fixed width for the window along the major axis of the screen,
+           <tr><td><code>{@link #ActionBarWindow_windowFixedWidthMajor com.example.android.swipedismiss:windowFixedWidthMajor}</code></td><td> A fixed width for the window along the major axis of the screen,
              that is, when in landscape.</td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowFixedWidthMinor com.levo.activityapptest:windowFixedWidthMinor}</code></td><td> A fixed width for the window along the minor axis of the screen,
+           <tr><td><code>{@link #ActionBarWindow_windowFixedWidthMinor com.example.android.swipedismiss:windowFixedWidthMinor}</code></td><td> A fixed width for the window along the minor axis of the screen,
              that is, when in portrait.</td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowSplitActionBar com.levo.activityapptest:windowSplitActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowSplitActionBar com.example.android.swipedismiss:windowSplitActionBar}</code></td><td></td></tr>
            </table>
            @see #ActionBarWindow_windowActionBar
            @see #ActionBarWindow_windowActionBarOverlay
@@ -1863,7 +1828,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010004, 0x7f010005, 0x7f010006
         };
         /**
-          <p>This symbol is the offset where the {@link com.levo.activityapptest.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.example.android.swipedismiss.R.attr#windowActionBar}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1873,11 +1838,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.levo.activityapptest:windowActionBar
+          @attr name com.example.android.swipedismiss:windowActionBar
         */
         public static final int ActionBarWindow_windowActionBar = 0;
         /**
-          <p>This symbol is the offset where the {@link com.levo.activityapptest.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.example.android.swipedismiss.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1887,7 +1852,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.levo.activityapptest:windowActionBarOverlay
+          @attr name com.example.android.swipedismiss:windowActionBarOverlay
         */
         public static final int ActionBarWindow_windowActionBarOverlay = 1;
         /**
@@ -1910,7 +1875,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:windowFixedHeightMajor
+          @attr name com.example.android.swipedismiss:windowFixedHeightMajor
         */
         public static final int ActionBarWindow_windowFixedHeightMajor = 6;
         /**
@@ -1933,7 +1898,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:windowFixedHeightMinor
+          @attr name com.example.android.swipedismiss:windowFixedHeightMinor
         */
         public static final int ActionBarWindow_windowFixedHeightMinor = 4;
         /**
@@ -1956,7 +1921,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:windowFixedWidthMajor
+          @attr name com.example.android.swipedismiss:windowFixedWidthMajor
         */
         public static final int ActionBarWindow_windowFixedWidthMajor = 3;
         /**
@@ -1979,11 +1944,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:windowFixedWidthMinor
+          @attr name com.example.android.swipedismiss:windowFixedWidthMinor
         */
         public static final int ActionBarWindow_windowFixedWidthMinor = 5;
         /**
-          <p>This symbol is the offset where the {@link com.levo.activityapptest.R.attr#windowSplitActionBar}
+          <p>This symbol is the offset where the {@link com.example.android.swipedismiss.R.attr#windowSplitActionBar}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1993,7 +1958,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.levo.activityapptest:windowSplitActionBar
+          @attr name com.example.android.swipedismiss:windowSplitActionBar
         */
         public static final int ActionBarWindow_windowSplitActionBar = 2;
         /** Attributes that can be used with a ActionMenuItemView.
@@ -2026,11 +1991,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background com.levo.activityapptest:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit com.levo.activityapptest:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_height com.levo.activityapptest:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.levo.activityapptest:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle com.levo.activityapptest:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           <tr><td><code>{@link #ActionMode_background com.example.android.swipedismiss:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.example.android.swipedismiss:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_height com.example.android.swipedismiss:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.example.android.swipedismiss:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.example.android.swipedismiss:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -2051,7 +2016,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:background
+          @attr name com.example.android.swipedismiss:background
         */
         public static final int ActionMode_background = 3;
         /**
@@ -2065,7 +2030,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:backgroundSplit
+          @attr name com.example.android.swipedismiss:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
@@ -2083,7 +2048,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:height
+          @attr name com.example.android.swipedismiss:height
         */
         public static final int ActionMode_height = 0;
         /**
@@ -2095,7 +2060,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:subtitleTextStyle
+          @attr name com.example.android.swipedismiss:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
@@ -2107,7 +2072,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:titleTextStyle
+          @attr name com.example.android.swipedismiss:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /**  Attrbitutes for a ActivityChooserView. 
@@ -2116,8 +2081,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.levo.activityapptest:expandActivityOverflowButtonDrawable}</code></td><td> The drawable to show in the button for expanding the activities overflow popup.</td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.levo.activityapptest:initialActivityCount}</code></td><td> The maximal number of items initially shown in the activity list.</td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.example.android.swipedismiss:expandActivityOverflowButtonDrawable}</code></td><td> The drawable to show in the button for expanding the activities overflow popup.</td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.example.android.swipedismiss:initialActivityCount}</code></td><td> The maximal number of items initially shown in the activity list.</td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -2139,7 +2104,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:expandActivityOverflowButtonDrawable
+          @attr name com.example.android.swipedismiss:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
@@ -2155,7 +2120,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:initialActivityCount
+          @attr name com.example.android.swipedismiss:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a CompatTextView.
@@ -2164,7 +2129,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CompatTextView_textAllCaps com.levo.activityapptest:textAllCaps}</code></td><td> Present the text in ALL CAPS.</td></tr>
+           <tr><td><code>{@link #CompatTextView_textAllCaps com.example.android.swipedismiss:textAllCaps}</code></td><td> Present the text in ALL CAPS.</td></tr>
            </table>
            @see #CompatTextView_textAllCaps
          */
@@ -2181,7 +2146,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:textAllCaps
+          @attr name com.example.android.swipedismiss:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
         /** Attributes that can be used with a LinearLayoutICS.
@@ -2190,9 +2155,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LinearLayoutICS_divider com.levo.activityapptest:divider}</code></td><td> Drawable to use as a vertical divider between buttons.</td></tr>
-           <tr><td><code>{@link #LinearLayoutICS_dividerPadding com.levo.activityapptest:dividerPadding}</code></td><td> Size of padding on either end of a divider.</td></tr>
-           <tr><td><code>{@link #LinearLayoutICS_showDividers com.levo.activityapptest:showDividers}</code></td><td> Setting for which dividers to show.</td></tr>
+           <tr><td><code>{@link #LinearLayoutICS_divider com.example.android.swipedismiss:divider}</code></td><td> Drawable to use as a vertical divider between buttons.</td></tr>
+           <tr><td><code>{@link #LinearLayoutICS_dividerPadding com.example.android.swipedismiss:dividerPadding}</code></td><td> Size of padding on either end of a divider.</td></tr>
+           <tr><td><code>{@link #LinearLayoutICS_showDividers com.example.android.swipedismiss:showDividers}</code></td><td> Setting for which dividers to show.</td></tr>
            </table>
            @see #LinearLayoutICS_divider
            @see #LinearLayoutICS_dividerPadding
@@ -2210,7 +2175,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:divider
+          @attr name com.example.android.swipedismiss:divider
         */
         public static final int LinearLayoutICS_divider = 0;
         /**
@@ -2228,7 +2193,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:dividerPadding
+          @attr name com.example.android.swipedismiss:dividerPadding
         */
         public static final int LinearLayoutICS_dividerPadding = 2;
         /**
@@ -2249,7 +2214,7 @@ containing a value of this type.
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:showDividers
+          @attr name com.example.android.swipedismiss:showDividers
         */
         public static final int LinearLayoutICS_showDividers = 1;
         /**  Base attributes that are available to all groups. 
@@ -2338,10 +2303,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout com.levo.activityapptest:actionLayout}</code></td><td> An optional layout to be used as an action view.</td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass com.levo.activityapptest:actionProviderClass}</code></td><td> The name of an optional ActionProvider class to instantiate an action view
+           <tr><td><code>{@link #MenuItem_actionLayout com.example.android.swipedismiss:actionLayout}</code></td><td> An optional layout to be used as an action view.</td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.example.android.swipedismiss:actionProviderClass}</code></td><td> The name of an optional ActionProvider class to instantiate an action view
              and perform operations such as default action for that menu item.</td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass com.levo.activityapptest:actionViewClass}</code></td><td> The name of an optional View class to instantiate and use as an
+           <tr><td><code>{@link #MenuItem_actionViewClass com.example.android.swipedismiss:actionViewClass}</code></td><td> The name of an optional View class to instantiate and use as an
              action view.</td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td> The alphabetic shortcut key.</td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td> Whether the item is capable of displaying a check mark.</td></tr>
@@ -2357,7 +2322,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td> The title associated with the item.</td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td> The condensed title associated with the item.</td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td> Whether the item is shown/visible.</td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction com.levo.activityapptest:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.example.android.swipedismiss:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -2395,7 +2360,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:actionLayout
+          @attr name com.example.android.swipedismiss:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
@@ -2414,7 +2379,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:actionProviderClass
+          @attr name com.example.android.swipedismiss:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
@@ -2432,7 +2397,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:actionViewClass
+          @attr name com.example.android.swipedismiss:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -2588,7 +2553,7 @@ containing a value of this type.
                  larger segment of its container. </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:showAsAction
+          @attr name com.example.android.swipedismiss:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -2699,8 +2664,8 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td> The IME options to set on the query text field.</td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td> The input type to set on the query text field.</td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td> An optional maximum width of the SearchView.</td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault com.levo.activityapptest:iconifiedByDefault}</code></td><td> The default state of the SearchView.</td></tr>
-           <tr><td><code>{@link #SearchView_queryHint com.levo.activityapptest:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.example.android.swipedismiss:iconifiedByDefault}</code></td><td> The default state of the SearchView.</td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.example.android.swipedismiss:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
            </table>
            @see #SearchView_android_imeOptions
            @see #SearchView_android_inputType
@@ -2753,7 +2718,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:iconifiedByDefault
+          @attr name com.example.android.swipedismiss:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 3;
         /**
@@ -2769,7 +2734,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:queryHint
+          @attr name com.example.android.swipedismiss:queryHint
         */
         public static final int SearchView_queryHint = 4;
         /** Attributes that can be used with a Spinner.
@@ -2786,12 +2751,12 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
            <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.levo.activityapptest:disableChildrenWhenDisabled}</code></td><td> Whether this spinner should mark child views as enabled/disabled when
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.example.android.swipedismiss:disableChildrenWhenDisabled}</code></td><td> Whether this spinner should mark child views as enabled/disabled when
              the spinner itself is enabled/disabled.</td></tr>
-           <tr><td><code>{@link #Spinner_popupPromptView com.levo.activityapptest:popupPromptView}</code></td><td> Reference to a layout to use for displaying a prompt in the dropdown for
+           <tr><td><code>{@link #Spinner_popupPromptView com.example.android.swipedismiss:popupPromptView}</code></td><td> Reference to a layout to use for displaying a prompt in the dropdown for
              spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_prompt com.levo.activityapptest:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
-           <tr><td><code>{@link #Spinner_spinnerMode com.levo.activityapptest:spinnerMode}</code></td><td> Display mode for spinner options.</td></tr>
+           <tr><td><code>{@link #Spinner_prompt com.example.android.swipedismiss:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode com.example.android.swipedismiss:spinnerMode}</code></td><td> Display mode for spinner options.</td></tr>
            </table>
            @see #Spinner_android_dropDownHorizontalOffset
            @see #Spinner_android_dropDownSelector
@@ -2879,7 +2844,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:disableChildrenWhenDisabled
+          @attr name com.example.android.swipedismiss:disableChildrenWhenDisabled
         */
         public static final int Spinner_disableChildrenWhenDisabled = 9;
         /**
@@ -2893,7 +2858,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:popupPromptView
+          @attr name com.example.android.swipedismiss:popupPromptView
         */
         public static final int Spinner_popupPromptView = 8;
         /**
@@ -2905,7 +2870,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:prompt
+          @attr name com.example.android.swipedismiss:prompt
         */
         public static final int Spinner_prompt = 6;
         /**
@@ -2925,7 +2890,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
                  anchored to the spinner widget itself. </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:spinnerMode
+          @attr name com.example.android.swipedismiss:spinnerMode
         */
         public static final int Spinner_spinnerMode = 7;
         /**  These are the standard attributes that make up a complete theme. 
@@ -2934,12 +2899,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle com.levo.activityapptest:actionDropDownStyle}</code></td><td> Default ActionBar dropdown style.</td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.levo.activityapptest:dropdownListPreferredItemHeight}</code></td><td> The preferred item height for dropdown lists.</td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.levo.activityapptest:listChoiceBackgroundIndicator}</code></td><td> Drawable used as a background for selected list items.</td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme com.levo.activityapptest:panelMenuListTheme}</code></td><td> Default Panel Menu style.</td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth com.levo.activityapptest:panelMenuListWidth}</code></td><td> Default Panel Menu width.</td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle com.levo.activityapptest:popupMenuStyle}</code></td><td> Default PopupMenu style.</td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle com.example.android.swipedismiss:actionDropDownStyle}</code></td><td> Default ActionBar dropdown style.</td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.example.android.swipedismiss:dropdownListPreferredItemHeight}</code></td><td> The preferred item height for dropdown lists.</td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.example.android.swipedismiss:listChoiceBackgroundIndicator}</code></td><td> Drawable used as a background for selected list items.</td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme com.example.android.swipedismiss:panelMenuListTheme}</code></td><td> Default Panel Menu style.</td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth com.example.android.swipedismiss:panelMenuListWidth}</code></td><td> Default Panel Menu width.</td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle com.example.android.swipedismiss:popupMenuStyle}</code></td><td> Default PopupMenu style.</td></tr>
            </table>
            @see #Theme_actionDropDownStyle
            @see #Theme_dropdownListPreferredItemHeight
@@ -2961,7 +2926,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:actionDropDownStyle
+          @attr name com.example.android.swipedismiss:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 0;
         /**
@@ -2979,7 +2944,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:dropdownListPreferredItemHeight
+          @attr name com.example.android.swipedismiss:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 1;
         /**
@@ -2991,7 +2956,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:listChoiceBackgroundIndicator
+          @attr name com.example.android.swipedismiss:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 5;
         /**
@@ -3003,7 +2968,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:panelMenuListTheme
+          @attr name com.example.android.swipedismiss:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 4;
         /**
@@ -3021,7 +2986,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:panelMenuListWidth
+          @attr name com.example.android.swipedismiss:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 3;
         /**
@@ -3033,7 +2998,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:popupMenuStyle
+          @attr name com.example.android.swipedismiss:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 2;
         /** Attributes that can be used with a View.
@@ -3043,8 +3008,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td> Boolean that controls whether a view can take focus.</td></tr>
-           <tr><td><code>{@link #View_paddingEnd com.levo.activityapptest:paddingEnd}</code></td><td> Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
-           <tr><td><code>{@link #View_paddingStart com.levo.activityapptest:paddingStart}</code></td><td> Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.example.android.swipedismiss:paddingEnd}</code></td><td> Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
+           <tr><td><code>{@link #View_paddingStart com.example.android.swipedismiss:paddingStart}</code></td><td> Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
            </table>
            @see #View_android_focusable
            @see #View_paddingEnd
@@ -3082,7 +3047,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:paddingEnd
+          @attr name com.example.android.swipedismiss:paddingEnd
         */
         public static final int View_paddingEnd = 2;
         /**
@@ -3100,7 +3065,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.levo.activityapptest:paddingStart
+          @attr name com.example.android.swipedismiss:paddingStart
         */
         public static final int View_paddingStart = 1;
     };
