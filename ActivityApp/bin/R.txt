@@ -238,9 +238,21 @@ int drawable event3 0x7f020059
 int drawable event4 0x7f02005a
 int drawable event5 0x7f02005b
 int drawable event6 0x7f02005c
-int drawable ic_launcher 0x7f02005d
-int drawable no 0x7f02005e
-int drawable yes 0x7f02005f
+int drawable grotta1 0x7f02005d
+int drawable grotta2 0x7f02005e
+int drawable grotta3 0x7f02005f
+int drawable hallgrim1 0x7f020060
+int drawable hallgrim2 0x7f020061
+int drawable hallgrim3 0x7f020062
+int drawable ic_launcher 0x7f020063
+int drawable nautholsbeach1 0x7f020064
+int drawable nautholsbeach2 0x7f020065
+int drawable nautholsbeach3 0x7f020066
+int drawable no 0x7f020067
+int drawable videy1 0x7f020068
+int drawable videy2 0x7f020069
+int drawable videy3 0x7f02006a
+int drawable yes 0x7f02006b
 int id action_bar 0x7f05001c
 int id action_bar_activity_content 0x7f050015
 int id action_bar_container 0x7f05001b
@@ -560,7 +572,7 @@ int styleable MenuItem_android_title 7
 int styleable MenuItem_android_titleCondensed 8
 int styleable MenuItem_android_visible 4
 int styleable MenuItem_showAsAction 13
-int[] styleable MenuView { 0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e, 0x0101012f, 0x01010130, 0x01010131, 0x01010435 }
+int[] styleable MenuView { 0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e, 0x0101012f, 0x01010130, 0x01010131, 0x0101041a }
 int styleable MenuView_android_headerBackground 4
 int styleable MenuView_android_horizontalDivider 2
 int styleable MenuView_android_itemBackground 5

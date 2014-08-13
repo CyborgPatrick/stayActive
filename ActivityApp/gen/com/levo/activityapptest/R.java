@@ -1074,9 +1074,21 @@ containing a value of this type.
         public static final int event4=0x7f02005a;
         public static final int event5=0x7f02005b;
         public static final int event6=0x7f02005c;
-        public static final int ic_launcher=0x7f02005d;
-        public static final int no=0x7f02005e;
-        public static final int yes=0x7f02005f;
+        public static final int grotta1=0x7f02005d;
+        public static final int grotta2=0x7f02005e;
+        public static final int grotta3=0x7f02005f;
+        public static final int hallgrim1=0x7f020060;
+        public static final int hallgrim2=0x7f020061;
+        public static final int hallgrim3=0x7f020062;
+        public static final int ic_launcher=0x7f020063;
+        public static final int nautholsbeach1=0x7f020064;
+        public static final int nautholsbeach2=0x7f020065;
+        public static final int nautholsbeach3=0x7f020066;
+        public static final int no=0x7f020067;
+        public static final int videy1=0x7f020068;
+        public static final int videy2=0x7f020069;
+        public static final int videy3=0x7f02006a;
+        public static final int yes=0x7f02006b;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -2617,7 +2629,7 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x01010435
+            0x0101012f, 0x01010130, 0x01010131, 0x0101041a
         };
         /**
           <p>
