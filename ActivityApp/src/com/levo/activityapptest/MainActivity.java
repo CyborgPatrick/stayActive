@@ -63,9 +63,6 @@ public void onCreate(Bundle savedInstanceState) {
     windowheight = getWindowManager().getDefaultDisplay().getHeight();
     topView();
     screenCenter = windowwidth / 2;
-    myImageList = new int[] { R.drawable.event1, R.drawable.event2,
-            R.drawable.event3, R.drawable.event4, R.drawable.event5,
-            R.drawable.event6 };
     	parentLayout = new RelativeLayout(this);
     	parentLayout.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT, 0, 3));
     	parentView.addView(parentLayout);
@@ -89,13 +86,11 @@ public void onCreate(Bundle savedInstanceState) {
 	}
 
 	private void initiateDatabase() {
-		String s;
 		String t = "https://www.google.com";
-		for(int i = 1; i <= 6; i++) {
-			String pictureName = "#" + (100000 + random.nextInt(99999));
-			s = "activity" + i;
-			activities.add(new Activities(s, t, pictureName));
-		}
+		activities.add(new Activities("hallgrim", t, 2, "The most famous Icelandic church"));
+		activities.add(new Activities("grotta", t, 3, "Resting the feet in warm water"));
+		activities.add(new Activities("nautholsbeach", t, 3, "Geothermal beach"));
+		activities.add(new Activities("videy", t, 3, "5 min. boat trip to Viðey island"));
 	}
 
 	public void buttons() {
@@ -151,8 +146,8 @@ public void onCreate(Bundle savedInstanceState) {
                 .setLayoutParams(new LayoutParams((windowwidth - 80), (windowwidth - 80)));
         myRelView.setX(40);
         myRelView.setY(40);
-        myRelView.setBackgroundResource(myImageList[1]);
-        myRelView.setBackgroundColor(Color.parseColor(activity.getPicture()));
+        int picId = getResources().getIdentifier(activity.getFirstPicture(), "drawable", getApplicationContext().getPackageName());
+        myRelView.setBackgroundResource(picId);
         final Button imageLike = new Button(this);
         imageLike.setLayoutParams(new LayoutParams(100, 50));
         imageLike.setBackground(getResources().getDrawable(R.drawable.yes));
@@ -178,7 +173,7 @@ public void onCreate(Bundle savedInstanceState) {
             	if(viewDecider) {
             		switch (event.getAction()) {
             		case MotionEvent.ACTION_DOWN:
-            			
+            			Likes = 0;
             			xTemp = x_cord;
             			break;
             		case MotionEvent.ACTION_MOVE:
@@ -197,7 +192,6 @@ public void onCreate(Bundle savedInstanceState) {
             				alphaValue = (xInit - xNow) / screen;
             				imagePass.setAlpha(alphaValue);
             			}
-                    
             			if(xTemp - 5 < x_cord && x_cord < xTemp + 5) {
             				break;
             			} else {
@@ -229,7 +223,6 @@ public void onCreate(Bundle savedInstanceState) {
             				}
             				break;
             			}
-                	
             		case MotionEvent.ACTION_UP:
             			x_cord = (int) event.getRawX();
             			y_cord = (int) event.getRawY();
@@ -244,17 +237,12 @@ public void onCreate(Bundle savedInstanceState) {
             			imagePass.setAlpha(alphaValue);
             			imageLike.setAlpha(alphaValue);
             			if (Likes == 0) {
-            				Log.e("Event Status", "Nothing");
             				myRelView.setX(40);
-            				myRelView.setY(40);
             				myRelView.setRotation(0);
             			} else if (Likes == 1) {
-            				Log.e("Event Status", "Passed");
             				parentLayout.removeView(myRelView);
             				stuffs();
             			} else if (Likes == 2) {
-
-            				Log.e("Event Status", "Liked");
             				parentLayout.removeView(myRelView);
             				stuffs();
             			}
@@ -267,7 +255,6 @@ public void onCreate(Bundle savedInstanceState) {
             		switch(event.getAction()) {
             		case MotionEvent.ACTION_DOWN:
             			xTemp = x_cord;
-            			System.out.println(xTemp + " " + x_cord);
             			break;
             		case MotionEvent.ACTION_MOVE:
             			x_cord = (int) event.getRawX();
@@ -276,35 +263,11 @@ public void onCreate(Bundle savedInstanceState) {
             				break;
             			} else {
             				myRelView.setX(x_cord - screenCenter + 40);
-            				if (x_cord > (screenCenter + (screenCenter / 2))) {
-            					/*
-            					if (x_cord > xTemp) {
-            						if (alphaValue > 0.9) {
-            							Likes = 2;
-            						} else {
-            							Likes = 0;
-            						}
-            					} else {
-            						Likes = 0;
-            					}*/
-            				} else {
-            					/*
-            					if (x_cord < (screenCenter / 2)) {
-            						if (alphaValue > 0.9) {
-            							Likes = 1;
-            						} else {
-            							Likes = 0;
-            						}
-            					} else {
-            						Likes = 0;
-            					}*/
-            				}
             				break;
             			}
             		case MotionEvent.ACTION_UP:
             			x_cord = (int) event.getRawX();
             			y_cord = (int) event.getRawY();
-            			System.out.println(xTemp + " " + x_cord);
             			if(xTemp - 10 < x_cord && x_cord < xTemp + 10) {
             				//information();
             				parentView.addView(buttonsLayout);
@@ -312,39 +275,19 @@ public void onCreate(Bundle savedInstanceState) {
             				viewDecider = true;
             			}
             			if(x_cord > (windowwidth - ((screenCenter / 4)))) {
-            				System.out.println("next picture");
-            				stuffs();
+            				int id = getResources().getIdentifier(activity.getNextPicture(), "drawable", getApplicationContext().getPackageName());
+            				myRelView.setBackgroundResource(id);
+            				myRelView.setX(40);	
             			} else if (x_cord < screenCenter / 4) {
-            				System.out.println("previous picture");
-            				stuffs();
+            				int id = getResources().getIdentifier(activity.getPreviousPicture(), "drawable", getApplicationContext().getPackageName());
+            				myRelView.setBackgroundResource(id);
+            				myRelView.setX(40);
             			} else {
             				myRelView.setX(40);
-            				
             			}
         				break;
             		}
             		return true;
-            		
-            		/*
-            			alphaValue = 0;
-            			imagePass.setAlpha(alphaValue);
-            			imageLike.setAlpha(alphaValue);
-            			if (Likes == 0) {
-            				Log.e("Event Status", "Nothing");
-            				myRelView.setX(40);
-            				myRelView.setY(40);
-            				myRelView.setRotation(0);
-            			} else if (Likes == 1) {
-            				Log.e("Event Status", "Passed");
-            				parentLayout.removeView(myRelView);
-            				stuffs();
-            			} else if (Likes == 2) {
-
-            				Log.e("Event Status", "Liked");
-            				parentLayout.removeView(myRelView);
-            				stuffs();
-            			}
-            			break;*/
             	}
             }
         });
@@ -380,7 +323,7 @@ public void onCreate(Bundle savedInstanceState) {
         distanceLayout.setLayoutParams(lp);
         distanceLayout.setGravity(Gravity.CENTER);
         TextView distanceView = new TextView(this);
-        distanceView.setText("500 m");
+        distanceView.setText(activity.getDistance() + " km");
         distanceLayout.addView(distanceView);
         titleLayout.addView(distanceLayout);
         
@@ -397,7 +340,7 @@ public void onCreate(Bundle savedInstanceState) {
         
         TextView information = new TextView(this);
         information.setPadding(5, 0, 5, 0);
-        information.setText("Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volu");
+        information.setText(activity.getDescription());
         textLayout.addView(information);
         
         LinearLayout placeholder = new LinearLayout(this);

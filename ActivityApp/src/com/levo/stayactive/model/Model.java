@@ -34,7 +34,7 @@ public class Model extends Observable {
 		for(int i = 1; i <= 6; i++) {
 			String pictureName = "event" + i;
 			s = "activity" + i;
-			activities.add(new Activities(s, t, pictureName));
+			activities.add(new Activities(s, t, 5, "sdö"));
 		}
 	}
 	
