@@ -4,3 +4,5 @@
 
 ActivityApp/bin/*
 
+
+*.class
