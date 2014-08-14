@@ -61,4 +61,8 @@ public class Activities {
 		}
 		return myImageList[i];
 	}
+	
+	public String getCurrentPicture() {
+		return myImageList[i];
+	}
 }

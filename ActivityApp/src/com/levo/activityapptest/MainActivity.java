@@ -68,8 +68,18 @@ public void onCreate(Bundle savedInstanceState) {
     	parentLayout.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT, 0, 3));
     	parentView.addView(parentLayout);
     	buttons();
-    	stuffs();
+    	stuffs(true);
 	}
+
+@Override
+public void onBackPressed() {
+	if(viewDecider) {
+		finish();
+	} else {
+		viewDecider = true;
+		stuffs(false);
+	}
+}
 
 	public void topView() {
 		RelativeLayout topLayout = new RelativeLayout(this);
@@ -135,15 +145,22 @@ public void onCreate(Bundle savedInstanceState) {
 			@Override
 			public void onClick(View v) {
 				System.out.println("no");
-				stuffs();
+				stuffs(true);
 			}
 		});
 		buttonsLayout.addView(noButtonLayout);
 	}
 
-	public void stuffs() {
+	public void stuffs(Boolean b) {
 		parentLayout.removeAllViews();
-		setActivity();
+		int picId;
+		if(b) {
+			setActivity();
+	        picId = getResources().getIdentifier(activity.getFirstPicture(), "drawable", getApplicationContext().getPackageName());
+		} else {
+			parentView.addView(buttonsLayout);
+	        picId = getResources().getIdentifier(activity.getCurrentPicture(), "drawable", getApplicationContext().getPackageName());
+		}
 		website.setText(activity.getName());
 		website.setClickable(true);
 		website.setOnClickListener(new OnClickListener() {
@@ -159,7 +176,6 @@ public void onCreate(Bundle savedInstanceState) {
                 .setLayoutParams(new LayoutParams((windowwidth - 80), (windowwidth - 80)));
         myRelView.setX(40);
         myRelView.setY(40);
-        int picId = getResources().getIdentifier(activity.getFirstPicture(), "drawable", getApplicationContext().getPackageName());
         myRelView.setBackgroundResource(picId);
         final Button imageLike = new Button(this);
         imageLike.setLayoutParams(new LayoutParams(100, 50));
@@ -254,10 +270,10 @@ public void onCreate(Bundle savedInstanceState) {
             				myRelView.setRotation(0);
             			} else if (Likes == 1) {
             				parentLayout.removeView(myRelView);
-            				stuffs();
+            				stuffs(true);
             			} else if (Likes == 2) {
             				parentLayout.removeView(myRelView);
-            				stuffs();
+            				stuffs(true);
             			}
             			break;
             		default:

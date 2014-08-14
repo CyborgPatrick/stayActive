@@ -10,3 +10,11 @@ ActivityApp/bin/*
 *.jar
 
 *.ap_
+
+*.class
+
+ActivityApp/bin/resources.ap_
+
+ActivityApp/bin/classes/com/levo/activityapptest/MainActivity.class
+
+ActivityApp/bin/dexedLibs/android-support-v7-appcompat-cc2ecca46bf38677ccfaa2d3d43393a5.jar
