@@ -20,6 +20,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.RelativeLayout;
@@ -72,8 +73,20 @@ public void onCreate(Bundle savedInstanceState) {
 
 	public void topView() {
 		RelativeLayout topLayout = new RelativeLayout(this);
-		topLayout.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT, (windowheight / 12)));
+		LayoutParams topParams = topLayout.getLayoutParams();
+		//topLayout.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT, (windowheight / 12)));
 		topLayout.setBackgroundColor(Color.parseColor("#00ff00"));
+		topLayout.setHeight();
+		ImageButton bucketButton = new ImageButton(this);
+		bucketButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Log.d("Button","Bucketlist");
+				Intent i = new Intent(getApplicationContext(), Bucketlist.class);
+				startActivity(i);
+			}
+		});
+		topLayout.addView(bucketButton);
 		parentView.addView(topLayout);
 	}
 

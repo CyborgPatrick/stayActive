@@ -1,10 +1,12 @@
 
-
-*.class
-
 ActivityApp/bin/*
 
-
 *.class
 
-*.class
+*.apk
+
+*.dex
+
+*.jar
+
+*.ap_
